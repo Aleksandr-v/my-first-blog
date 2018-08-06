@@ -1,6 +1,10 @@
 {% extends 'blog/base.html' %}
 {% block content %}
 
+  {{ tag.name }}
+  <br>
+  {{ tag.description }}
+
   {% for post in posts %}
       <div class="post">
           <div class="date">
